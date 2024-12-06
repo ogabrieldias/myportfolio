@@ -1,76 +1,68 @@
-
 // ================ menu icon navbar ================
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let navLinks = document.querySelectorAll('header nav a');
 
+// Menu icon click event
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 };
 
-// ================ scroll sections active link ================
+// Scroll sections active link
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
+  // Scroll sections active link
   sections.forEach(seca => {
     let top = window.scrollY;
     let offset = seca.offsetTop - 150;
     let height = seca.offsetHeight;
     let id = seca.getAttribute('id');
 
-    if(top >= offset && top < offset + height) {
+    if (top >= offset && top < offset + height) {
       navLinks.forEach(links => {
         links.classList.remove('active');
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
       });
-    };
+    }
   });
 
-
-// ================ sticky navbar ================
-
-let header = document.querySelector('.header');
-
-header.classList.toggle('sticky', window.scrollY > 100);
-
-
-// ================ remove menu icon navbar when click navbar link (scroll) ================
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-
-
+  // Sticky navbar
+  let header = document.querySelector('.header');
+  header.classList.toggle('sticky', window.scrollY > 100);
 };
- 
 
-// ================ scroll reveal ================
-<script src="https://unpkg.com/scrollreveal"></script>
-
+// Remove menu icon when clicking on a nav link
+navLinks.forEach(link => {
+  link.onclick = () => {
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+  };
+});
 
 // ================ swiper ================
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    grabCursor: true,
-    pagination: {                    
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  slidesPerView: 1,
+  spaceBetween: 50,
+  loop: true,
+  grabCursor: true,
+  pagination: {                    
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 // ================ dark light mode ================
 let darkModeIcon = document.querySelector('#darkMode-icon');
-
-darkModeIcon.onclick = () =>  {
+darkModeIcon.onclick = () => {
   darkModeIcon.classList.toggle('bx-sun');
   document.body.classList.toggle('dark-mode');
 };
-
 
 // ================ scroll reveal ================
 ScrollReveal({ 
@@ -79,6 +71,5 @@ ScrollReveal({
   duration: 2000,
   delay: 200
 });
-
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
