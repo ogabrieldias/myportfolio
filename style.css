@@ -281,7 +281,7 @@ section.home div.profession h3 {
 } */
 
 #profession1 {
-    top: 35.5rem;
+    top: 35.2rem;
 }
 
 /* #profession2 {
@@ -289,7 +289,7 @@ section.home div.profession h3 {
 } */
 
 #profession3 {
-    bottom: 33.4rem;
+    bottom: 32.1rem;
 }
 
 section.home div.profession-box div.circle {
@@ -647,9 +647,20 @@ div.about-content p {
         border-left: 384px solid transparent;
     }
 
-
-
     
+    .home .profession-box .profession:nth-child(1) {
+        left: 2.4rem;
+    }
+
+    .home .profession-box .profession:nth-child(2) {
+        
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        left: 1.2rem;
+    }
+
+
 
 }
 
@@ -689,11 +700,11 @@ div.about-content p {
 
 
     .home .profession-box .profession:nth-child(1) {
-        left: 6.4rem;
+        left: 4.8rem;
     }
 
     .home .profession-box .profession:nth-child(3) {
-        left: -2.6rem;
+        left: -1.1rem;
     }
 
 
@@ -722,7 +733,7 @@ div.about-content p {
     } */
     
     #profession1 {
-        top: 46.5rem;
+        top: 45.8rem;
     }
     
     /* #profession2 {
@@ -730,7 +741,7 @@ div.about-content p {
     } */
     
     #profession3 {
-        bottom: 43.9rem;
+        bottom: 42.8rem;
     }
 }
 
@@ -753,7 +764,20 @@ div.about-content p {
     }
 
     .home .profession-container .profession-box .profession {
-        left: 3.2rem; /* ----------Verificada---------- */
+        left: 0rem; /* ----------Verificada---------- */
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        left: 4.8rem;
+    }
+
+
+    .home .profession-box .profession:nth-child(3) {
+        left: -1.2rem;
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        left: 0rem;
     }
 
 
@@ -780,7 +804,7 @@ div.about-content p {
     } */
     
     #profession1 {
-        top: 46.3rem;
+        top: 46rem;
     }
     
     /* #profession2 {
@@ -788,7 +812,7 @@ div.about-content p {
     } */
     
     #profession3 {
-        bottom: 42.6rem;
+        bottom: 42.9rem;
     }
 }  
 
@@ -807,9 +831,36 @@ div.about-content p {
     }
 
     .home .profession-container .profession-box .profession {
-        left: 3.2rem; /* ----------Verificada---------- */
+        left: 5.6rem; /* ----------Verificada---------- */
     }
 
+    
+    .home .profession-box .profession:nth-child(1) {
+        left: 5.7rem;
+    }
+
+
+    .home .profession-box .profession:nth-child(2) {
+        left: 1rem;
+        top: 0rem;
+    }
+
+    .home .profession-box .profession:nth-child(3) {
+        left: -1.8rem;
+    }
+
+    .home .profession-box .profession:nth-child(4) {
+        left: 0rem;
+    }
+
+    #profession1 {
+        top: 49.2rem;
+    }
+    
+    #profession3 {
+        bottom: 46.3rem;
+    }
+    
     .navbar a:nth-child(1),
     .navbar a:nth-child(2) {
         color: var(--main-color);
@@ -941,7 +992,7 @@ div.about-content p {
     } 
 
     .home .profession-box .profession:nth-child(1) { 
-        transform: rotate(-90deg) translate(-50%, -248%);
+        transform: rotate(-90deg) translate(-50%, -253%);
         left: auto;
     }
     
@@ -950,17 +1001,17 @@ div.about-content p {
     }
     
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(0%, -304%);
+        transform: rotate(0deg) translate(0%, -324%);
         left: auto;
     }
     
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-50%, -374%);
+        transform: rotate(90deg) translate(-50%, -371%);
         left: auto;
     }
     
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-100%, -272%);
+        transform: rotate(180deg) translate(-100%, -302%);
         left: auto;
     }
 
