@@ -677,7 +677,7 @@ div.about-content p {
 @media (max-width: 1440px) {
     .header{
         padding: 2rem 7%;
-        width: 104%;
+        width: 90%;
     }
 
     .navbar a {
