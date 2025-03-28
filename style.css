@@ -1040,7 +1040,7 @@ div.about-content p {
         top: auto !important;
         bottom: auto !important;
     }
-    
+
     .home .profession-box .profession:nth-child(1) { 
         transform: rotate(-90deg) translate(-50%, -275%);
         left: auto;
@@ -1147,6 +1147,30 @@ div.about-content p {
 
     .home {
         padding: 0 3% 30rem;
+    }
+
+    .home .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(-50%, -254%);
+        left: auto;
+    }
+    
+    .home .profession-box .profession:nth-child(1) i {
+        margin-right: 0;
+    }
+    
+    .home .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(0%, -273%);
+        left: auto;
+    }
+    
+    .home .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(-50%, -373%);
+        left: auto;
+    }
+    
+    .home .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-100%, -269%);
+        left: auto;
     }
 
     .footer-iconTop {
