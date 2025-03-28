@@ -135,8 +135,10 @@ section{
 }
 
 .home .home-content {
+    position: absolute;
     max-width: 44rem;
     z-index: 0;
+    top: 20rem;
 }
 
 .home-content {
@@ -316,7 +318,7 @@ section.home div.profession-container div.overlay {
 
 div.home-img img {
     position: absolute;
-    bottom: 4rem;
+    
     right: -10rem;
     pointer-events: none;
 }
@@ -330,6 +332,7 @@ section.about {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    margin-top: 10rem;
     background: var(--bg-color);
 }
 
@@ -695,6 +698,7 @@ div.about-content p {
 
     section {
         padding: 10rem 7% 2rem;
+        /* max-height: 100vh; */
     }
 
     html {
@@ -996,7 +1000,13 @@ div.about-content p {
 
 
     .home .home-content {
+        position: absolute;
         max-width: 50rem;
+        top: auto;
+        
+        
+            
+        
     }
 
     .home-content h3 {
@@ -1080,17 +1090,20 @@ div.about-content p {
         overflow: hidden;
     } 
     
-    section.home div.profession-container div.overlay {
-        position: fixed;
-        top: 503px;
-        right: 0;
+* section.home div.profession-container div.overlay {
+        position: fixed; 
+        bottom: 0; 
+        right: 0; 
         width: 0;
         height: 0;
-        border-top: 200px solid var(--main-color);  /* A largura da borda ajustada para a largura da tela */
-        border-right: 100px solid var(--main-color);  /* A largura da borda ajustada para a largura da tela */
-        border-bottom: 200px solid var(--main-color); /* A largura da borda ajustada para a largura da tela */
+        top: 67%;
+        border-top: 200px solid var(--main-color);  
+        border-right: 100px solid var(--main-color);  
+        border-bottom: 200px solid var(--main-color); 
         border-left: 100px solid transparent;
-    }
+
+        z-index: 999; 
+    }  
 
     .about {
         flex-direction: column-reverse;
