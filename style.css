@@ -207,9 +207,9 @@ input.btn:hover, a.btn:hover{
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
-    width:  900px;
-    height: 830px;
+    transform: translateY(-50.1%);
+    width:  100%;
+    height: 100%;
     overflow: hidden;
     pointer-events: none;
     text-align: center;
@@ -217,7 +217,7 @@ input.btn:hover, a.btn:hover{
 
 .home .profession-container .profession-box {
     position: absolute;
-    top: 25px;
+    top: -15px;
     right: 0;
     width: 768px;
     height: 768px;
@@ -302,7 +302,7 @@ section.home div.profession-box div.circle {
      border-radius: 50%;
 }
 
-/* section.home div.profession-container div.overlay {
+section.home div.profession-container div.overlay {
     position: absolute;
     top: 25px;
     right: 0;
@@ -312,7 +312,7 @@ section.home div.profession-box div.circle {
     border-right: 100px solid var(--main-color);
     border-bottom: 200px solid var(--main-color);
     border-left: 100px solid transparent;
-} */
+} 
 
 div.home-img img {
     position: absolute;
@@ -647,17 +647,17 @@ div.about-content p {
 @media (max-width: 1920px) {
     section.home div.profession-container div.overlay {
         position: absolute;
-        top: 25px;
+        top: 0px;
         right: 0;
         width: 0;
         height: 0;
         border-top: 384px solid var(--main-color);
-        border-right: 394px solid var(--main-color);
-        border-bottom: 394px solid var(--main-color);
+        border-right: 384px solid var(--main-color);
+        border-bottom: 384px solid var(--main-color);
         border-left: 384px solid transparent;
     }
 
-    
+
     .home .profession-box .profession:nth-child(1) {
         left: 2.4rem;
     }
@@ -702,10 +702,10 @@ div.about-content p {
         font-size: 51%;
     }
 
-    .home .profession-container .profession-box {
-        left: 32rem;
-        margin: 48px 0px 0px 0px;
-    }
+    /* .home .profession-container .profession-box { codigo desnecessário
+        left: 0rem;
+        margin: -25px 0px 0px 640px;
+    } */
 
 
 
@@ -718,12 +718,15 @@ div.about-content p {
     }
 
 
-
-
-    .home .profession-container .overlay {
-        left: 31rem;    /* Roxo de fundo */
-        margin: 24px 0px 0px 0px;
+    .home .profession-container .profession-box {
+        position: absolute;
+        top: -15px;
+        right: -200px;
     }
+    /* .home .profession-container .overlay { código desnecessário 27/03/25
+        left: 31rem;    Roxo de fundo 
+        margin: 24px 0px 0px 0px;
+    } */
 
     section.home div.profession-container div.overlay {
         position: absolute;
@@ -731,9 +734,9 @@ div.about-content p {
         right: 0;
         width: 0;
         height: 0;
-        border-top: 424px solid var(--main-color);
-        border-right: 394px solid var(--main-color);
-        border-bottom: 394px solid var(--main-color);
+        border-top: 384px solid var(--main-color);
+        border-right: 284px solid var(--main-color);
+        border-bottom: 384px solid var(--main-color);
         border-left: 384px solid transparent;
     }
     
@@ -761,17 +764,30 @@ div.about-content p {
     }
 
     section {
-        padding: 10rem 2% 2rem;
+        padding: 10rem 7% 2rem;
     }
 
     html {
         font-size: 51%;
     }
 
-    .home .profession-container .profession-box {
-        left: 44rem;
-        margin: 48px 0px 0px 0px;    /* Habilidades */
+    .home .profession-container {
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50.1%);
+        width: 96%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        text-align: center;
     }
+
+
+    /* .home .profession-container .profession-box { codigo desnecessário
+        left: 44rem;
+        margin: 48px 0px 0px 0px;       Habilidades
+    } */
 
     .home .profession-container .profession-box .profession {
         left: 0rem; /* ----------Verificada---------- */
@@ -791,21 +807,21 @@ div.about-content p {
     }
 
 
-    .home .profession-container .overlay {
-        left: 36rem;    /* Roxo de fundo   Verificada */
+    /* .home .profession-container .overlay { codigo desnecessário 27/03/25
+        left: 36rem;    Roxo de fundo   Verificada 
         margin: 48px 0px 0px 0px;
-    }
+    } */
     
     
     section.home div.profession-container div.overlay {
         position: absolute;
-        top: 25px;
-        right: 0;
+        top: 0px;
+        right: 0px;
         width: 0;
         height: 0;
         border-top: 384px solid var(--main-color);
-        border-right: 394px solid var(--main-color);
-        border-bottom: 394px solid var(--main-color);
+        border-right: 284px solid var(--main-color);
+        border-bottom: 384px solid var(--main-color);
         border-left: 384px solid transparent;
     }
 
@@ -837,7 +853,7 @@ div.about-content p {
     }
 
     .home .profession-container .profession-box {
-        left: 75rem;
+        left: 50rem;
     }
 
     .home .profession-container .profession-box .profession {
@@ -871,10 +887,10 @@ div.about-content p {
         bottom: 46.3rem;
     }
     
-    .navbar a:nth-child(1),
-    .navbar a:nth-child(2) {
+    /* .navbar a:nth-child(1), codigo desnecessário 27/03/25
+    .navbar a:nth-child(2) { 
         color: var(--main-color);
-    }
+    } */
 
     .navbar a.active::before {
         color: var(--main-color);
@@ -882,8 +898,19 @@ div.about-content p {
     }
     
 
-    .home .profession-container .overlay {
-        left: 65rem;
+
+
+    section.home div.profession-container div.overlay {
+        position: absolute;
+        top: 0px;
+        right: -140px;
+        /* left: 20rem; código desnecessário 28/03/25 */
+        width: 0;
+        height: 0;
+        border-top: 384px solid var(--main-color);
+        border-right: 244px solid var(--main-color);
+        border-bottom: 384px solid var(--main-color);
+        border-left: 494px solid transparent;
     }
 
     .home-img img {
@@ -906,6 +933,10 @@ div.about-content p {
 
 
 @media (max-width: 768px) {
+
+   
+    
+
     html {
         font-size:47%;
     }
@@ -985,7 +1016,8 @@ div.about-content p {
         left: 0;
         width: 100%;
         height: 100%;
-    }
+        top: 57%;
+    }    
 
     .home .profession-container .profession-box {
         position: fixed;
@@ -1001,8 +1033,16 @@ div.about-content p {
         transform-origin: 0;
     } 
 
+
+    .home .profession-box .profession:nth-child(1),.home .profession-box .profession:nth-child(2),.home .profession-box .profession:nth-child(3),.home .profession-box .profession:nth-child(4) {
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+    }
+    
     .home .profession-box .profession:nth-child(1) { 
-        transform: rotate(-90deg) translate(-50%, -253%);
+        transform: rotate(-90deg) translate(-50%, -275%);
         left: auto;
     }
     
@@ -1011,17 +1051,17 @@ div.about-content p {
     }
     
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(0%, -324%);
+        transform: rotate(0deg) translate(0%, -286%);
         left: auto;
     }
     
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-50%, -371%);
+        transform: rotate(90deg) translate(-50%, -386%);
         left: auto;
     }
     
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-100%, -302%);
+        transform: rotate(180deg) translate(-100%, -284%);
         left: auto;
     }
 
@@ -1107,6 +1147,10 @@ div.about-content p {
 
     .home {
         padding: 0 3% 30rem;
+    }
+
+    .footer-iconTop {
+        margin: auto;
     }
 }
 
