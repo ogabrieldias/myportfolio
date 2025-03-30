@@ -22,13 +22,24 @@
     
 }
 
-.dark-mode {
+/* .dark-mode {
     --bg-color: #0D0C0D;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
     --main-color: #D92B04;
     --cor-destaque: #D92B04;
+} */
+
+
+.dark-mode { /* (dark-mode2) */
+    /*cor excluida: #393E46 */     
+    --bg-color: #222831;
+    --text-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .7);
+    --main-color: #00ADB5;
+    --cor-destaque: #00FFF5;
 }
+
 
 
 html{
