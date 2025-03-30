@@ -14,11 +14,11 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #000000;
+    --main-color: #00FFF5;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
-    --cor-destaque: #D92B04;
-    --color-title: #D92B04;
+    --cor-destaque: #00ADB5;
+    --color-title: #00FFF5;
     
 }
 
@@ -143,6 +143,7 @@ section{
 .home {
     display: flex;
     align-items: center;
+    
 }
 
 .home .home-content {
@@ -339,12 +340,15 @@ span {
 }
 
 section.about {
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    margin-top: 10rem;
+    margin-top: 10rem; 
     background: var(--bg-color);
+    min-height: auto; 
+    overflow: hidden;
 }
 
 div.about-img img {
@@ -489,7 +493,7 @@ div.about-content p {
     font-size: 3rem;
 }
 
- p {
+p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
